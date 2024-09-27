@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="#DE0707"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Plus"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvLoginPage">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userPhoto"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                android:background="@drawable/kindpng_723761"
+                android:longClickable="false"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_below="@id/userPhoto"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-39dp"
+                android:layout_marginEnd="131dp"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <TableLayout
+                android:id="@+id/TL01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingStart="10dp"
+                android:layout_below="@id/userPhoto"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:id="@+id/TR01_TL01"
+                    android:layout_marginTop="5dp">
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR02_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR03_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etphone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Phone"
+                        android:inputType="phone"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR04_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etCountry"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Country"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR05_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR06_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etPass"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TR07_TL01"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/etRePass"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:hint="Re-enter Password"
+                        android:inputType="textPassword"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="@string/select"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TL01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#DE0707"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/SignProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="71dp"
+                android:layout_height="61dp"
+                android:layout_below="@id/TL01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="706dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

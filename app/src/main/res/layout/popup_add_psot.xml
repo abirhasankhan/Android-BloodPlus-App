@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape">
+
+
+    <Button
+        android:id="@+id/cpBtnClose"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:backgroundTint="#040404"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:tint="@color/white"
+        android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <Button
+        android:id="@+id/cpBtnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#F06657"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cpBtnPost"
+        android:background="#fff"
+        android:layout_marginTop="20dp">
+        <TableLayout
+            android:id="@+id/TL01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:visibility="visible">
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/cpTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/popup_edittext_style"
+                    android:hint="Title"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cpUserImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="TODO"
+                    android:background="#ffffff"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="5dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:hint="@string/select"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:inputType="none"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+                <EditText
+                    android:id="@+id/cpDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Date"
+                    android:inputType="datetime"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/cpPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/cpCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Country"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/cpCity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/cpDes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/cpProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

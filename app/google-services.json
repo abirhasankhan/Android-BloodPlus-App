@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773248946405",
+    "project_id": "bloodplus-24164",
+    "storage_bucket": "bloodplus-24164.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773248946405:android:1f03fea63c614eaea2040c",
+        "android_client_info": {
+          "package_name": "edu.ewubd.bloodplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773248946405-4bdrraevuaoqah5eoc0puumufgpbq0bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL9Emh9n5k6KniVYumQIWSoKzRLSNAKxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773248946405-4bdrraevuaoqah5eoc0puumufgpbq0bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

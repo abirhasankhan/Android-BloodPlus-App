@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/commentUserImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/kindpng_723761"/>
+
+    <TextView
+        android:id="@+id/commentUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textColor="#969595"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/commentDate"
+        android:layout_toEndOf="@id/commentUserImg"/>
+    <TextView
+        android:id="@+id/userComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="User comment here"
+        android:textColor="#969595"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/commentUserName"
+        android:layout_toEndOf="@id/commentUserImg"/>
+
+    <TextView
+        android:id="@+id/commentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="12:20"
+        android:textColor="#969595"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

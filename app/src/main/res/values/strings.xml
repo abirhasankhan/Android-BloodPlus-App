@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bloodPlus</string>
+    <string name="select"> Select Blood Group</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

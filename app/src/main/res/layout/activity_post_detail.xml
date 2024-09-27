@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"
+        android:background="#DE0707">
+
+        <TextView
+            android:id="@+id/tvPostDetailPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="Blood Plus"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/pdRL02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvPostDetailPage"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/pdTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pdTitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:id="@+id/pdNameAndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:text="18 jan 2022 | by Abir"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pdUserImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_below="@id/view"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@id/pdNameAndDate"
+                android:background="@drawable/kindpng_723761" />
+
+            <TableLayout
+                android:id="@+id/pdTableLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pdNameAndDate"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Blood Type: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdBlooadType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="A+"
+                        android:textColor="#F40707"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Contact number: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0192585"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Date: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pdDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="12 jun 2022"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/pdDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pdTableLay"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="I need bload iafh ahiaf akfhiaf aojfi a afjafjajf oafaf aofjaf aofjaf aojf."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/pdCommentImage"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/pdDes"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/kindpng_723761"
+                android:scaleType="centerCrop" />
+
+            <EditText
+                android:id="@+id/pdComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pdDes"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/btnComment"
+                android:layout_toEndOf="@id/pdCommentImage"
+                android:background="@drawable/comment_btn_style"
+                android:hint="Your comment"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"/>
+
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pdDes"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/comment_btn_style"
+                android:padding="9dp"
+                android:text="comment"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:backgroundTint="#EC6B6B" />
+
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pdRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pdRL02"
+            android:background="@color/white"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
